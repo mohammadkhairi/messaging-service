@@ -1,0 +1,42 @@
+{
+  "name": "messaging-service",
+  "version": "1.0.0",
+  "description": "this service is use for messaging service in 8campus",
+  "main": "server.js",
+  "directories": {
+    "test": "tests",
+    "coverage": "nyc npm run test",
+    "start": "nodemon app.js tsc --watch"
+  },
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validation": "^1.0.3",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.9",
+    "request": "^2.88.0",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.2.0",
+    "underscore": "^1.9.2",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "node-mocks-http": "^1.8.1",
+    "nyc": "^15.0.0",
+    "sinon": "^8.1.1",
+    "testdouble": "^3.12.5",
+    "mongodb-mockup-server": "git+https://github.com/mohammadkhairi/Mockup-Server.git"
+  },
+  "scripts": {
+    "test": "mocha tests/**/*.test.js"
+  },
+  "keywords": [
+    "messsaging",
+    "messaging-service"
+  ],
+  "author": "Mohammad Khairi Bin Ali",
+  "license": "ISC"
+}
