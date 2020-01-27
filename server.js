@@ -18,12 +18,12 @@ const app = express();
 const port = 8002; // default port to listen
 const server = http.createServer(app);
 const redis = redisConfig();
-const redisURI = redisURIConfig(redis);
+//const redisURI = redisURIConfig(redis);
 const io = socketIO.listen(server);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-io.adapter(redisURI);
+//io.adapter(redisURI);
 
 const router = app._router;
 uiRoute(router);
