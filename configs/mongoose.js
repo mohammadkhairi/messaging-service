@@ -4,7 +4,8 @@ const _ = require('underscore');
 
 const environments = {
     LOCAL: {
-        host: 'localhost',
+        //host: 'localhost',
+        host: '52.77.255.162',
         port: 27017,
         db: 'messaging-service'
     },
